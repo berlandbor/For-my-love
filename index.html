@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Открытка для жены</title>
+    <style>body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(-45deg, #ffc0cb, #ffbad2, #ffb6c1, #ff88aa);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);  /* немного прозрачности */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card h1 {
+    text-shadow: 2px 2px 5px rgba(255, 20, 147, 0.2);
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #ff88aa;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6699;
+    transform: scale(1.05);
+}
+  card p {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: #555;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}      
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Для самой лучшей жены в мире</h1>
+        <h2>С днём рождения тебя моя Наташенька! Ты моя любовь! Я тебя люблю!</h2>
+        <p>Для моей любимой Наташеньки, ты — мой источник радости и смысла жизни. Каждый день с тобой — это подарок. Наташенька, твоя улыбка светится ярче всех звёзд, и я благодарен судьбе за каждое мгновение, проведенное с тобой. Ты — мой островок спокойствия в этом мире. Твоя любовь дарит мне силы и вдохновение каждый день. Наташенька, ты превращаешь обыденные моменты в незабываемые, и я горжусь тем, что могу называть тебя своей женой. Люблю тебя, Наташенька, за твою доброту, искренность и безграничную любовь. Ты — моя жизнь. Невозможно измерить глубину моих чувств к тебе словами, но знай, Наташенька, что ты — моя вселенная.</p>
+        <button onclick="playMusic()">Нажми, чтобы послушать мелодию</button>
+    </div>
+    <audio id="music" src="path_to_your_music.mp3"></audio>
+
+    <script>
+        function playMusic() {
+            const music = document.getElementById("music");
+            music.play();
+        }
+    </script>
+</body>
+</html>
